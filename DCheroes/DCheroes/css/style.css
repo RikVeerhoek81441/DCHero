@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'full_pack_2025';
+    src:  url('../fonts/full_pack_2025-webfont.woff2') format('woff2'),
+          url('../fonts/full_pack_2025-webfont.woff') format('woff');
+    font-family: 'leaguegothic';
+    src: url('../fonts/full_pack_2025-webfont.woff') format('woff');
+}
+body{
+    margin: 0px;
+    overflow: hidden;
+    
+}
+#header{
+    width: 99.5vw;
+    height: 5vh;
+    background-color: black;
+    text-align: left;
+    margin: 0 auto;
+    font-family: fantasy;
+    font-size: 40px;
+    padding: 1vh;
+    padding-right: 0px;
+}
+#header-text{
+    color: red;
+    font-family: full_pack_2025;
+    margin: 0px;
+    font-size: 42px;
+    position: relative;
+    display: inline;
+    animation: mymove 100s infinite;
+    animation-timing-function: linear;
+
+
+}
+@keyframes mymove {
+    0%   {color: red;}
+    10% {color: yellow}
+    20% {color: red}
+    30% {color: yellow}
+    40% {color: red}
+    50% {color: yellow}
+    60% {color: red}
+    70% {color: yellow}
+    80% {color: red}
+    90% {color: yellow}
+    100% {color: red;}
+  }
+  @keyframes mymove2 {
+    0%   {background-color: red;}
+    10% {background-color: yellow}
+    20% {background-color: red}
+    30% {background-color: yellow}
+    40% {background-color: red}
+    50% {background-color: yellow}
+    60% {background-color: red}
+    70% {background-color: yellow}
+    80% {background-color: red}
+    90% {background-color: yellow}
+    100% {background-color: red;}
+  }
+#main-container{
+    width: 100vw;
+    height: 93vh;
+}
+#left-container{
+    height: 99%;
+    width: 20%;
+    background-color: red;
+    float: left;
+    font-family: full_pack_2025;
+    display: grid;
+}
+
+
+.list-button{
+    
+    margin-top: auto;
+    padding: 65px 135px;
+    color: red;
+    font-family: full_pack_2025;
+    border: 0px;
+    
+    background-color: black;
+    margin: 0px;
+    height: 2px;
+
+    text-decoration-line: none;
+}
+.list-button:hover{
+    background-color: red;
+    color: black;
+}
+#team-list{
+    
+}
+#center-container{
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    float: left;
+    color: red;
+    font-family: full_pack_2025;
+    overflow: auto;
+}
+.list-item{
+    border: double 5px red;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+.list-item-name{
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    
+    font-size: inherit;
+    left: 10px;
+}
+.list-item-pic{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+.list-item-pic:hover{
+    opacity: 0.5;
+}
+.list-item-link{
+    position: relative;
+    z-index: 2;
+}
+#right-container{
+    height: 100%;
+    width: 50%;
+    
+    float: left;
+    font-family: full_pack_2025;
+    animation: mymove2 100s infinite;
+    overflow: auto;
+}
+.item-title{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+    font-size: -webkit-xxx-large;
+}
+.item-pic{
+    height: 50%;
+    width: 90%;
+    margin: 5%;
+}
+.item-info{
+    width: 90%;
+    margin: 0 auto;
+}
+.item-ratingbox{
+width: 90%;
+height: 30%;;
+border: 2px double black;
+margin: 0 auto;
+margin-top: 20px;
+}
+.item-commentbox{
+    width: 100%;
+    height: 80%;
+    border: 0px;
+}
+.item-submitbutton{
+    width: 100%;
+    height: 20%;
+    border: 0;
+}
